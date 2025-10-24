@@ -131,12 +131,114 @@ console.log(un);
 
 // console.log(nu);
 
+console.clear();
 
 // non primitive datatypes
 
 // array
 
+// []
+
+let fruit = ["jack fruit","apple","orange","banana","cherry","watermelon",1,true]
+
+console.log(fruit);
+console.log(fruit[1]);
+console.log(fruit[0]);
+console.log(fruit[0]);
+console.log(fruit[fruit.length-1]);
+
+
+
+
 // object
+
+//{}
+
+let fruit1 = {
+
+    redFruit : ["apple","cherry"],
+
+    yellowFruit : ["jackFruit","banana"],
+
+    bigFruit : "watermelon"
+
+}
+
+console.log(fruit1);
+console.log(fruit1.redFruit[0]);
+console.log(fruit1.bigFruit);
+console.log(fruit1.yellowFruit[1]);
+
+console.clear();
+
+// operators
+
+// Arithmetic operators
+
+
+// addition        +
+// subraction      -
+// multiplication  *
+// division        /
+// modulus         %
+// exponencial     **
+
+// increment operator (++)
+
+// post inc    var++
+// pre inc     ++var
+
+// decrement operator  (--)
+
+// post dec    var--
+// pre  dec    --var
+
+
+console.log(10+10);
+console.log(10-10);
+console.log(10*10);
+console.log(10/10);
+console.log(3%10);
+console.log(3**2); //3^2 = 3*3 = 9
+
+
+
+// increment operator
+
+let num1 = 10
+
+num1     = ++num1
+
+console.log(num1);
+
+
+
+let num2 = 2 
+
+let num3 = num2++ 
+
+console.log("num2 : ",num2);
+console.log("num3 : ",num3);
+
+let num4 = 5       
+let num5 = ++num4  
+let num6  = num5++ 
+
+console.log("num4 : ",num4); // num4 : 6
+console.log("num5 : ",num5); // num5 : 7
+console.log("num6 : ",num6); // num6 : 6
+
+
+let num7 = 1      // null
+let num8 = num7-- // null // 1
+let num9 = ++num8 // ++num8 // ++num8 = ++1 = 2
+
+console.log("num7 : ",num7); // sha - 0  bo - 0 // num 7 : 0
+console.log("num8 : ",num8); // sha - 2  bo - 2 // num 8 : 2
+console.log("num9 : ",num9); // sha - 2  bo - 2
+
+
+
 
 // function
 
