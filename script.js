@@ -239,6 +239,197 @@ console.log("num9 : ",num9); // sha - 2  bo - 2
 
 
 
+let num10 = 1
+let num11 = num10--
+
+console.log(num10);
+console.log(num11);  // h - 0,1
+
+let num12 = 13
+let num13 = --num12 //--13 = 12
+let num14 = ++num13 //++num13 = ++12 = 13
+
+console.log(num14);
+
+console.clear();
+
+
+// Assignment operator
+
+let one = 10
+
+let additionVal = 200
+
+one += additionVal // one = one + additionVal
+
+
+
+console.log(one);
+
+
+let two = 1
+
+two -= additionVal // two = two - additionVal = 1-200 = -199
+
+console.log(two); // -199
+console.log(additionVal); // 200
+
+
+
+let three = 3
+
+let four = 4
+
+three += four // 7
+three -= four // 7-4 = 3
+three *= four 
+three /= four 
+three **= four 
+three %= four 
+
+console.log(three);
+
+
+
+// comparision operator or relational operator
+
+// meaning   operator     example   result
+
+// lessThen     <           5<5       false
+
+// greaterThen  >           5>3       true
+
+// lessThenEq   <=          5<=5      true
+
+// greaterThenEq >=          5>=6     false
+
+// loosyTypeEq   ==          5=="5"   true
+
+// strictlyTypeEq ===        5==="5"  false
+
+// loosyNotEq     !=         5!=5     false
+
+// strictlyNotEq  !==         5!=="5" true
+
+
+
+// 1
+console.log(10 < 8) // false
+
+// 2
+console.log(4 > 2) // true
+
+// 3
+console.log(7 <= 10) // true
+
+// 4
+console.log(9 >= 9) // true
+
+// 5
+console.log(5 == "5") // true
+
+// 6
+console.log(3 === "3") // false
+
+// 7
+console.log(8 != 6)  // true
+
+// 8
+console.log(5 !== "5") // true
+
+// 9
+console.log(12 <= 11) // false
+
+// 10
+console.log(0 == false) // true
+
+console.clear();
+
+// logical operator
+
+
+// AND   &&
+
+// false && true = false
+// false && false = false
+// true && true   = true
+
+// true && false && true = false
+
+
+
+// OR    ||
+
+// true || false = true
+
+// false || false = false
+
+// true || true || false = true
+
+
+
+// NOT   !
+
+// !(true) = false
+
+// 1
+console.log((10 > 5) && (5 == "5"))
+
+// true && true = true
+
+// 2
+console.log((7 <= 3) || (4 !== "4"))
+
+// false || true = true
+
+// 3
+console.log(!(8 >= 8))
+
+// !(true) = false
+
+// 4
+console.log((2 != 3) && (9 <= 9))
+
+// true && true = true
+
+// 5
+console.log((5 === "5") || (6 < 4))
+
+// false  || false = false
+
+// 6
+console.log((10 != "10") && (7 > 2))
+
+// false && true = false
+
+// 7
+console.log((3 >= 3) || !(2 < 1))
+
+// true || true = true
+
+// 8
+console.log(!(4 === 4) && (5 <= 6))
+
+// false && true = false
+
+// 9
+console.log((9 < 10) && (10 !== "10"))
+
+// true && true = true
+
+// 10
+console.log((8 > 5) || !(3 == "3"))
+
+// true || false = true
+
+
+
+
+
+
+
+
+
 
 // function
 
