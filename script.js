@@ -423,6 +423,234 @@ console.log((8 > 5) || !(3 == "3"))
 // true || false = true
 
 
+console.log( 10 !== true);
+
+// true
+
+
+console.clear();
+
+// concatination (+)
+
+
+let str1 = "hello"
+
+let str2 = "world"
+
+let totalVal = str1 +" "+ str2
+
+
+console.log(totalVal);
+
+
+// Template litral
+
+let str3 = "spider"
+
+let str4 = "man"
+
+let finalVal = `${str3} ${str4}`
+
+console.log(finalVal);
+
+
+
+// Type conversion
+
+
+// string anything string
+
+// string
+
+
+console.log(("1"+"1"));
+console.log(("1"+1));
+console.log(("1"+true));
+console.log(("1"+undefined));
+console.log(("1"+null));
+console.log(("1"+[1,2]));
+console.log(("1"+{k:1}));
+
+// number
+
+
+console.log((1 + "1"));
+console.log((1 + 3));
+console.log((1 + true));
+console.log((1 + undefined));
+console.log((1 + null));
+console.log((1 + [1,2]));
+console.log((1 + {a:1}));
+
+
+// boolean
+
+
+console.log(true + "1");
+console.log((true + 2));
+console.log((true + true));
+console.log((true + undefined));
+console.log((true + null));
+console.log((true + [1,2]));
+console.log((true + {r:4}));
+
+console.clear();
+
+
+// Explicit Type Conversion
+
+
+// number
+
+// constractor (Number)
+
+
+console.log(12 + Number("12"));
+console.log(Number())
+console.log(Number(""))
+console.log(Number(true))
+console.log(Number(false))
+console.log(Number("abc"))
+console.log(Number(undefined))
+console.log(Number(null))
+console.log(Number([100,234]))
+console.log(Number({k:2}))
+
+
+// boolean
+
+// (Boolean)
+
+console.log(Boolean());
+console.log(Boolean(""));
+console.log(Boolean("abc"));
+console.log(Boolean(-1));
+console.log(Boolean(true));
+console.log(Boolean(false));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean([]));
+console.log(Boolean({}));
+
+
+// flow control statement
+
+// conditional statement
+
+// if statement
+
+// condition true = allow
+
+// if(condition){
+//     // statement
+// }
+
+if(5=="5"){
+    console.log("the condition is true");  
+}
+
+
+// if else statement
+
+if(5>=6){
+    console.log("condition true");
+    
+}else{
+    console.log("condition false");
+    
+}
+
+// if else if statement
+
+let hour = 23
+
+if(hour >= 1 && hour <= 6){
+    console.log("Good morning");
+    
+}else if(hour >= 7 && hour <= 12){
+    console.log("this is bright morning");
+    
+}else if(hour >= 13 && hour <= 17){
+    console.log("good afternoon");
+    
+}else if(hour >= 18 && hour <= 20){
+    console.log("good evening");
+    
+}else{
+    console.log("Good night");
+    
+}
+
+// nested if statement
+
+// let uName = prompt("enter your name")
+// let age =prompt("enter your age")
+// let height = prompt("enter your height")
+// let weight =prompt("enter your weight")
+
+// if(age >= 18){
+//     if(height >= 168){
+//         if(weight>=68){
+//             alert(uName+" congradulation your selected"); 
+//         }else{
+//             alert(uName+" your weight is not eligible bcz your weight only :-"+weight+"kg . eligible weight is : - 68Kg min");
+            
+//         }
+//     }else{
+//         alert(uName + " your height is not eligible bcz your height only :-"+height+"cm. eligible height is :- 168cm min");
+        
+//     }
+// }else{
+//     alert(uName + " your age is not eligible bcz your age only :-"+age + "old. eligible age is 18 years old.");
+    
+// }
+
+
+
+
+// switch statement
+
+// switch(){
+//     case value : statement ; break;
+//     case value : statement ; break;
+//     case value : statement ; break;
+// }
+
+let trafficLight = "green"
+
+switch(trafficLight){
+    case "red" : console.log("stop the vechile"); break;
+    case "yellow" : console.log("start the vechile"); break;
+    case "green" : console.log("go the vechile"); break;    
+}
+
+// ternary operator
+
+// condition ?  statement : statement;
+
+let PwdInput = -1
+
+PwdInput ? console.log("welcome home page") : console.log("your password is incorrect");
+
+
+
+// looping statement
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
