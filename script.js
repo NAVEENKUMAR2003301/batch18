@@ -632,9 +632,219 @@ let PwdInput = -1
 
 PwdInput ? console.log("welcome home page") : console.log("your password is incorrect");
 
+console.clear();
 
 
 // looping statement
+
+
+// for loop
+
+// syntex
+
+// for(intialiazation;condition;iteration){
+//     // statement
+// }
+
+for(let a = 1; a<=5 ; a++){
+    console.log(a); // 1  2  3 4 5
+}
+
+// a=1 ; 1<=5 = true ; 1++ = 2
+// a=2 ; 2<=5 = true ; 2++ = 3
+// a=3 ; 3<=5 = true ; 3++ = 4
+// a=4 ; 4<=5 = true ; 4++ = 5
+// a=5 ; 5<=5 = true ; 5++ = 6
+// a=6 ; 6<=5 = false ; 
+
+for(let a = 1; a<=10 ; a++){
+    if(a%2==1){
+        console.log(a); 
+    }else{
+        console.log("even : ", a);
+        
+    }
+}
+
+console.clear();
+
+
+// while loop
+
+/// syntex
+
+// intialiazation
+// while(condition){
+//     // statement
+//     iteration
+// }   
+
+let val = 10 // 10 // 9 // 1 // 0 -1
+
+while(val>=20){ // 10>=0= true // 9>=0 true // 1>=0 0>=0 , -1>=0 false
+    console.log(val); // 10 9 .. 1 0
+    val-- // 10-- = 9, 9-- = 8 1-- = 0 0-- = -1
+}
+
+// do while loop
+
+// initialiazation
+// do{
+//     // statement
+//     // iteration
+// }
+// while(condition)
+
+let val1 = 10
+
+do{
+    console.log(val1);
+    val1--
+    
+}
+while(val1>=0)
+
+// for of loop
+
+// string , array , function
+
+let str11 = "javascript"
+
+for(let ab of str11){
+    console.log(ab);
+}
+
+let arr1= ["apple", " banana","orange"]
+
+for(let add of arr1){
+    console.log(add);
+    
+}
+
+// for in loop
+
+// object
+
+let fruit2 = {
+    redFruit : "apple",
+    yellowFruit : "banana",
+    bigFruit : "watermelon"
+} 
+
+for(let abc in fruit2){
+    console.log(fruit2[abc]);
+    
+}
+
+console.clear();
+
+
+// function
+
+// function ted(a,b){
+//     // statement
+//     // return
+//     // yield
+// }
+
+// ted()
+
+
+function ted1(){
+    console.log("hello world");
+    if(5===5){
+        console.log("the condition is true");
+        
+    }
+    for(let i = 0 ; i<=4;i++){
+        console.log(i);
+        
+    }
+    
+}
+
+ted1()
+
+
+function ted2(uname,uAge){
+    console.log("name :", uname);
+    console.log("age :", uAge);
+}
+
+ted2("kamal",22)
+ted2("livin",21)
+
+
+let uDetials = {
+    uname : "john",
+    Urole : "developer"
+}
+
+function userDetials(){
+    console.log(uDetials.uname);
+    console.log(uDetials.Urole);
+}
+
+userDetials()
+
+
+function returnVal(a){
+    return a
+}
+
+let storeData = returnVal(30);
+
+console.log(storeData);
+
+function extraVal(){
+    console.log(50+storeData);
+    
+}
+
+extraVal()
+
+console.clear();
+
+
+// scopes
+
+// var - global scope , function scope
+// let - block scope
+// const - block scope
+
+console.log(a1);
+
+var a1 = 10
+
+
+
+let b1 = 20 // temporal dead zone
+console.log(b1); 
+
+const c1 = 30
+
+console.log(c1);
+
+
+function scopeCheck(){
+    if(true){
+        var gScope = "global scope"
+        let bScope = "black scope"
+        const bScope1 = "black scope"
+        console.log(bScope);
+        console.log(bScope1);
+    }
+    console.log(gScope);
+    
+    
+    
+}
+
+scopeCheck()
+
+
+
+
 
 
 
@@ -662,3 +872,4 @@ PwdInput ? console.log("welcome home page") : console.log("your password is inco
 // function
 
 // date
+
