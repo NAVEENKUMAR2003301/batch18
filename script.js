@@ -998,7 +998,208 @@ sampleArr.splice(8,3,80,90,100)
 
 console.log(sampleArr);
 
+console.clear();
+
+// Array merge method
+
+// concat()
+
+let arr11 = [1,2,3,4,5]
+let arr12 = [6,7,8,9,10]
+
+let concatArr = arr11.concat(arr12,11)
+
+console.log(concatArr);
+
+
+// slice()
+
+let arr13 = [1,2,3,4,5,6]
+
+let sliceVal = arr13.slice(2,5)
+
+console.log(sliceVal);
+
+
+// flat()
+
+let arr14 = [1,2,3,[4,5,[6,[7]]]]
+
+let flatVal = arr14.flat(Infinity)
+
+console.log(flatVal);
+
+
+// fill()
+
+let arr15 = [1,2,3,4] // 1,2,3,"four"
+
+arr15.fill("four",3,5) // value, si , ei
+
+console.log(arr15);
+
+// sort()
+
+let arr16 = ["A",4,312,"a",2,8,1000,9,2]
+
+let sortVal = arr16.sort()
+
+console.log(sortVal);
 
 
 
-//  date
+
+// indexOf()
+
+let arr17 = [1,2,3,4,3,5,6,2,1]
+
+let indexOfVal = arr17.indexOf(3,4)
+
+console.log(indexOfVal);
+
+
+// lastIndexOf()
+
+let arr18 = [1,2,3,3,2,1]
+
+let lastIndexOfVal = arr18.lastIndexOf(2,3)
+
+console.log(lastIndexOfVal);
+
+console.clear();
+
+
+// array higher order method 
+
+// forEach()
+
+let games = ["kabaddi","foodball","hockey","cricket"]
+
+// let printing = (a)=>{
+//     console.log(a);
+    
+// }
+
+// printing(100)
+
+// let returnVal = (a)=>{
+//     return a
+// }
+
+// let reVal = returnVal(100);
+
+// console.log(100+reVal);
+
+
+let foreachVal = games.forEach((c,i,t)=>{
+    return(c);
+    
+})
+
+console.log(foreachVal);
+
+
+// map()
+
+let mapVal = games.map((cu,ind,to)=>{
+    return(cu);
+    
+})
+
+console.log(mapVal);
+
+
+// filter()
+
+let employee = [
+    {emName : "a",eSalary : 100000},
+    {emName : "b",eSalary : 200000},
+    {emName : "c",eSalary : 300000},
+    {emName : "d",eSalary : 400000},
+    {emName : "e",eSalary : 100000},
+]
+
+let filterVal = employee.filter((c,i,t)=>{
+    return c.eSalary == 100000
+})
+
+console.log(filterVal);
+
+
+// find()
+
+let findVal = employee.find((c,i,t)=>{
+     return c.eSalary == 100000;
+})
+
+console.log(findVal);
+
+
+// reduce()
+
+let count = [1,2,3,4,5] // 15
+
+
+let reduceVal = employee.reduce((acc,c,i,t)=>{
+
+
+ return  acc + c.eSalary
+
+
+
+
+
+},0)
+
+console.log(reduceVal);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let total1 = 0
+
+// for(let a = 0; a < count.length; a++ ){
+//     total1 = total1 + count[a]
+// }
+
+// console.log(total1);
+
+
+// let intialVal = 0
+
+// for(let ab of count){
+//     intialVal = intialVal + ab
+// }
+// console.log(intialVal);
+
+
+
+// let start = 0 
+// count.forEach((c)=>{
+//     start = start + c
+    
+// })
+// console.log(start);
+
+
+
+// //  date
