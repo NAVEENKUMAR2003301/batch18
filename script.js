@@ -1429,4 +1429,136 @@ console.log(both);
 
 // set
 
+console.log(dataVal);
+
+// setfullYear
+
+dataVal.setFullYear(2003)
+
+console.log(dataVal);
+
+dataVal.setMonth(0)
+
+console.log(dataVal);
+
+dataVal.setDate(30)
+
+console.log(dataVal);
+
+dataVal.setHours(15)
+
+console.log(dataVal);
+
+dataVal.setMinutes(55)
+
+console.log(dataVal);
+
+dataVal.setSeconds(12)
+
+console.log(dataVal);
+
+console.clear();
+
+
+// birthday day finder
+
+// let year = prompt("enter your birthday year")
+
+// let month = prompt("enter your birth month")
+
+// let date2 = prompt("enter your birth date")
+
+
+// let newDate = new Date()
+
+// newDate.setFullYear(year)
+
+// newDate.setMonth(month-1)
+
+// newDate.setDate(date2)
+
+
+// let dayName = newDate.getDay()
+
+// let days = ["sun","mon","tue","wed","thu","fri","sat"]
+
+// alert(days[dayName]);
+
+
+
+
+
+// setTimeout()
+
+// setTimeout(()=>{
+// let date3 = new Date();
+
+// console.log(date3.toLocaleTimeString());
+// },1000)
+
+
+// setInterval(()=>{
+//   let date3 = new Date();
+
+//   console.log(date3.toLocaleTimeString());
+// },3000)
+
+
+function one(){
+  console.log("one");
+  
+}
+function two(){
+  console.log("two");
+  
+}
+function three(){
+  console.log("three");
+  
+}
+
+
+one()
+
+setTimeout(two,2000)
+
+three()
+
+
+// promise
+
+// let promiseDate = new Promise(resolve,reject,bending)
+
+// console.log(promiseDate);
+
+let dom = document.querySelector(".dom")
+let img = document.querySelector("img")
+
+fetch("https://fakestoreapi.com/products/")
+.then((data)=>{
+  return data.json()
+  
+})
+.then((jsData)=>{
+  console.log(jsData);
+ 
+  jsData.forEach((c,i,t)=>{
+    console.log(c.title);
+    
+  })
+  
+
+  img.src = jsData.image
+  
+})
+.catch((error)=>{
+  console.warn(error);
+  
+})
+
+
+
+
+
+
 
